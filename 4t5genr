@@ -1,0 +1,12 @@
+local function verifyKey(key)
+    return key == _G.wl_key
+end
+
+local enteredKey = "krakenissohot"
+
+if verifyKey(enteredKey) then
+    local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+    local Window = Library.CreateLib("TITLE", "DarkTheme")
+else
+    player:Kick("Key did not match your HWID, please stop being a nigger")
+end
